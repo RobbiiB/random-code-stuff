@@ -1,3 +1,6 @@
+import re
+
+
 ## Question 1 ##
 
 """
@@ -109,7 +112,29 @@ print(power_diff)
 
 ## problem 5 ##
 
+"""
+## input
+w = "BAADD"
+s = "AD"
+
+
+while True:
+    if w==w.replace(s,""):
+        break
+    w = w.replace(s,"")
+print(w)
+"""
+
+## problem 6 ##
 
 ## input
-w = "ABCDCCDFDFCDF"
-s = "CDF"
+w = "ABBBABA"
+
+def does_not_contain_AAB(w): 
+    marker="AAB"
+    if re.search(marker,w)==None:
+        return True
+    else:
+        return False
+
+print(f"{does_not_contain_AAB(w)}")
