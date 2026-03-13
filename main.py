@@ -3,7 +3,7 @@ import re
 
 ## Question 1 ##
 
-"""
+
 records = "PaperA 1 PaperB 1 PaperC 1 PaperD 1 PaperE 1"
 
 rawdata:list = records.split(" ")
@@ -29,10 +29,10 @@ for i,num in enumerate(data):
         h=0
 
 print(f"The h-index for this author is {h}")
-"""
+
 
 ## Question 2 ##
-"""
+
 ##input
 spell_book = {
 'Bing': {
@@ -68,11 +68,11 @@ def damage_dealt(spell_book:dict, weakness:list, spells_casted:list):
     return total_damage
 
 print(f"A total of {damage_dealt(spell_book,weakness,spells_casted)} was dealt")
-"""
+
 
 ## problem 3 ##
 
-"""
+
 class Box():
     def __init__(self, num_packs = 36, cards_per_pack = 10, card_weight = 1.8, empty_pack_weight = 1.0, empty_box_weight = 121.2):
         self.num_packs:int = num_packs
@@ -88,11 +88,11 @@ class Box():
 ## input
 new_box = Box(num_packs=30, cards_per_pack=5)
 
-print(f"The weight of this boc is {new_box.box_weight()}")
-"""
+print(f"The weight of this box is {new_box.box_weight()}")
+
 
 ## problem 4 ##
-"""
+
 ##input
 k = 2
 power = [20, 15, 16, 18]
@@ -108,11 +108,11 @@ for i in range(k):
     power_diff+= patronus_power[-i-1]-patronus_power[i]
 
 print(power_diff)
-"""
+
 
 ## problem 5 ##
 
-"""
+
 ## input
 w = "BAADD"
 s = "AD"
@@ -123,7 +123,7 @@ while True:
         break
     w = w.replace(s,"")
 print(w)
-"""
+
 
 ## problem 6 ##
 
